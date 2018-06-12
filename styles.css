@@ -1,0 +1,158 @@
+body{
+  margin: 0;
+}
+
+#navbar {
+  background-color: #52658F;
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: block;
+  text-align: center;
+}
+
+#navbar-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  text-transform: capitalize;
+}
+
+#navbar header {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  vertical-align: middle;
+  color: #E8E8E8;
+}
+
+.nav-link{
+  display: block;
+  text-decoration: none;
+  color: #E8E8E8;
+  line-height: 3;
+  border-top: solid;
+  border-color: black;
+  border-width: thin;
+}
+
+.nav-link:hover {
+    background-color: #333A56;
+    color: #E8E8E8;
+}
+
+#main-doc {
+  background: #F7F5E6;
+  padding-left: 175px;
+  padding-top: 10px;
+}
+
+.main-section header {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+.main-section p {
+  margin-left: 20px;
+  font-size: 16px;
+  color: black;
+}
+
+.main-section ul {
+  margin-left: 20px;
+  font-size: 16px;
+  color: black;
+}
+
+.main-section code {
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 16px;
+  color: black;
+  background: #E8E8E8;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-style: dashed;
+  border-width: thin;
+}
+
+@media (max-width: 667px){
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+  #navbar header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #navbar{
+    position: fixed;
+    left: 0;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height:90px;
+  }
+  #navbar-list{
+    display: inline-flex;
+    justify-content: space-around;
+  }
+  .nav-link{
+    border-top: none;
+  }
+  #main-doc {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 100px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)  {
+    #container {
+      display: flex;
+      flex-direction: column;
+    }
+    #navbar header {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    #navbar{
+      position: fixed;
+      left: 0;
+      top:0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+      height:90px;
+    }
+    #navbar-list{
+      display: inline-flex;
+      justify-content: space-around;
+    }
+    .nav-link{
+      border-top: none;
+    }
+    #main-doc {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-top: 100px;
+    }
+}
