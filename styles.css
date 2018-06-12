@@ -86,7 +86,7 @@ li {
   border-width: thin;
 }
 
-@media (max-width: 667px){
+@media (max-width: 550px){
   #container {
     display: flex;
     flex-direction: column;
